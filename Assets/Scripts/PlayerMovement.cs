@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed;
-
+    public float moveSpeed;
     
     private Animator mAnimator=>GetComponent<Animator>();
     private Rigidbody mRigidBody => GetComponent<Rigidbody>();
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnAnimatorMove() {
-        mRigidBody.MovePosition(mRigidBody.position + moveVector * mAnimator.deltaPosition.magnitude);
+        mRigidBody.MovePosition(mRigidBody.position + moveVector * mAnimator.deltaPosition.magnitude*moveSpeed);
         mRigidBody.MoveRotation(rotateQuaternion);
     }
 }
