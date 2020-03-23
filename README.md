@@ -1,4 +1,4 @@
-## Horror game from Unity
+## Horror game made with Unity
 <img src="Docs/capture1.png?raw=true" alt="Example" width="512px" height="512px"/>
 
 ## Reference
